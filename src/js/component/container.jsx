@@ -1,9 +1,8 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
-
-//create your first component
-const Container = () => {
-	return 
-};
+import Jumbotron from "./jumbotron.jsx";
+import Card from "./card.jsx";
 
 export default Container;
