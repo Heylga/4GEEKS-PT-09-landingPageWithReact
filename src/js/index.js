@@ -16,6 +16,7 @@ import Footer from "./component/footer.jsx";
 //render your react application
 ReactDOM.render(
 	<>
+		<Navbar />
 		<Jumbotron />
 	</>,
 	document.querySelector("#app")
