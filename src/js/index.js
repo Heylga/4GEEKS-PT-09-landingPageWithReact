@@ -13,7 +13,6 @@ import Jumbotron from "./component/jumbotron.jsx";
 import Card from "./component/card.jsx";
 import Footer from "./component/footer.jsx";
 
-
 ReactDOM.render(
 	<>
 		<Navbar />
@@ -24,4 +23,3 @@ ReactDOM.render(
 	</>,
 	document.querySelector("#app")
 );
-
