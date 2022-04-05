@@ -1,9 +1,8 @@
 import React from "react";
 
-
 //create your first component
 const Navbar = () => {
-	return 
+	return;
 };
 
 export default Navbar;

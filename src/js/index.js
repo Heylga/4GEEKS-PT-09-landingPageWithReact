@@ -14,4 +14,9 @@ import Card from "./component/card.jsx";
 import Footer from "./component/footer.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<>
+		<Jumbotron />
+	</>,
+	document.querySelector("#app")
+);
