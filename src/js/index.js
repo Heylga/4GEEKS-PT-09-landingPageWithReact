@@ -16,10 +16,10 @@ import Footer from "./component/footer.jsx";
 ReactDOM.render(
 	<>
 		<Navbar />
-    <Container />
+		<Container />
 		<Jumbotron />
-    <Card />
-    <Footer />
+		<Card />
+		<Footer />
 	</>,
 	document.querySelector("#app")
 );
