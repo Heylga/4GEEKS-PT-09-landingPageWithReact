@@ -2,6 +2,7 @@ import React from "react";
 
 //create your first component
 const Navbar = () => {
+
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
