@@ -23,7 +23,7 @@ Card.propTypes = {
 	cardDescription: PropTypes.string,
 	buttonLabel: PropTypes.string,
 	buttonURL: PropTypes.string,
-};
+
 
 ReactDOM.render(
 	<content
