@@ -6,20 +6,17 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
-import Navbar from "./component/navbar.jsx";
-import Container from "./component/container.jsx";
-import Jumbotron from "./component/jumbotron.jsx";
-import Card from "./component/card.jsx";
-import Footer from "./component/footer.jsx";
+import Main from "../js/View/Main.jsx";
+import Navbar from "../js/component/navbar.jsx";
+import Jumbotron from "../js/component/jumbotron.jsx";
+// import Card from "../js/component/card.jsx";
+import Footer from "../js/component/footer.jsx";
 
+//render your react application
 ReactDOM.render(
 	<>
-		<Navbar />
-		<Container />
-		<Jumbotron />
-		<Card />
-		<Footer />
+		{" "}
+		<Main /> <Navbar /> <Jumbotron /> <Footer />{" "}
 	</>,
 	document.querySelector("#app")
 );
