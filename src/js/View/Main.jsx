@@ -13,7 +13,7 @@ const Main = () => {
 		<div>
 			<div className="Navbar"></div>
 			<div className="Jumbotron"></div>
-			{/* <div className="Card"></div> */}
+			<div className="Card"></div>
 			<div className="Footer"></div>
 			{/* <h1 className="text-center mt-5">Hello Rigo!</h1>
 			<p>

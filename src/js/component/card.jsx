@@ -4,14 +4,10 @@ import rigoImage from "../../img/size.png";
 
 const Card = () => {
 	return (
-		<div className="card" style="width: 18rem;">
-			<img
-				src="../../img/size.png"
-				class="card-img-top"
-				alt="image size"
-			/>
+		<div className="card m-5">
+			<img src="size.png" />
 			<div className="card-body">
-				<h5 className="card-title">Card title</h5>
+				<h5 className="card-title">Card Title</h5>
 				<p className="card-text">
 					Lorem Ipsum is simply dummy text of the printing and
 					typesetting industry. Lorem Ipsum has been the industry's

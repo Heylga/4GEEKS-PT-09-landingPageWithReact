@@ -9,14 +9,14 @@ import "../styles/index.css";
 import Main from "../js/View/Main.jsx";
 import Navbar from "../js/component/navbar.jsx";
 import Jumbotron from "../js/component/jumbotron.jsx";
-// import Card from "../js/component/card.jsx";
+import Card from "../js/component/card.jsx";
 import Footer from "../js/component/footer.jsx";
 
 //render your react application
 ReactDOM.render(
 	<>
 		{" "}
-		<Main /> <Navbar /> <Jumbotron /> <Footer />{" "}
+		<Main /> <Navbar /> <Jumbotron /> <Card /> <Footer />{" "}
 	</>,
 	document.querySelector("#app")
 );
