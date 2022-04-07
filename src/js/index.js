@@ -8,6 +8,7 @@ import "../styles/index.css";
 //import your own components
 import Main from "../js/View/Main.jsx";
 import Navbar from "../js/component/navbar.jsx";
+import Container from "./component/container.jsx";
 import Jumbotron from "../js/component/jumbotron.jsx";
 import Card from "../js/component/card.jsx";
 import Footer from "../js/component/footer.jsx";
@@ -16,7 +17,7 @@ import Footer from "../js/component/footer.jsx";
 ReactDOM.render(
 	<>
 		{" "}
-		<Main /> <Navbar /> <Jumbotron /> <Card /> <Footer />{" "}
+		<Main /> <Navbar /> <Container /> <Footer />{" "}
 	</>,
 	document.querySelector("#app")
 );
