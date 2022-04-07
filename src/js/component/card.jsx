@@ -1,122 +1,94 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import rigoImage from "../../img/size.png";
 
 const Card = () => {
 	return (
-		<div className="cards">
-			<div className="card m-5">
-				<img src="size.png" />
-				<div className="card-body">
-					<h5 className="card-title">Card Title</h5>
-					<p className="card-text">
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged.
-						It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
+		<div className="card my-4" style={{ width: "18rem" }}>
+			<img src="https://dummyimage.com/500x325/cccccc/827f82" />
+			<div className="card-body mt-2 mb-4">
+				<h3 className="card-title text-center fw-bolder">Card title</h3>
+				<p
+					className="card-text text-center"
+					style={{ fontSize: "large" }}>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sapiente esse necessitatibus neque.
+				</p>
 			</div>
-			<div className="card m-5">
-				<img src="size.png" />
-				<div className="card-body">
-					<h5 className="card-title">Card Title</h5>
-					<p className="card-text">
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged.
-						It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
-			</div>
-			<div className="card m-5">
-				<img src="size.png" />
-				<div className="card-body">
-					<h5 className="card-title">Card Title</h5>
-					<p className="card-text">
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged.
-						It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
-			</div>
-			<div className="card m-5">
-				<img src="size.png" />
-				<div className="card-body">
-					<h5 className="card-title">Card Title</h5>
-					<p className="card-text">
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged.
-						It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
-			</div>
-			<div className="card m-5">
-				<img src="size.png" />
-				<div className="card-body">
-					<h5 className="card-title">Card Title</h5>
-					<p className="card-text">
-						Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has
-						survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged.
-						It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
+			<div className="bg-light py-3 text-center">
+				<a href="#" className="btn btn-primary ">
+					Find Out More!
+				</a>
 			</div>
 		</div>
 	);
 };
 
 export default Card;
+
+/*const Card = (props) => {
+	const card = props.card;
+	return card.map((index) => {
+		//const Card = () => {
+		return (
+			<div className="container col-8">
+				<div className="card my-4" style={{ width: "18rem" }}>
+					<img src={index.imageUrl} />
+					<div className="card-body mt-2 mb-4">
+						<h3 className="card-title text-center fw-bolder">
+							{index.title}
+						</h3>
+						<p
+							className="card-text text-center"
+							style={{ fontSize: "large" }}>
+							{index.description}
+						</p>
+					</div>
+					<div className="bg-light py-3 text-center">
+						<a href="#" className="btn btn-primary ">
+							{index.buttonLabel}
+						</a>
+					</div>
+				</div>
+			</div>
+		);
+	});
+};
+
+Card.propTypes = {
+	imageUrl: PropType.string,
+	title: PropType.string,
+	description: PropType.string,
+	buttonLabel: PropType.string,
+};
+
+const list = [
+	{
+		title: "Card title",
+		imageUrl: "https://dummyimage.com/500x325/cccccc/827f82",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.",
+		buttonLabel: "Find Out More!",
+	},
+	{
+		title: "Card title",
+		imageUrl: "https://dummyimage.com/500x325/cccccc/827f82",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo magno sapiente, tempore debitis beatae culpa natus architecto.",
+		buttonLabel: "Find Out More!",
+	},
+	{
+		title: "Card title",
+		imageUrl: "https://dummyimage.com/500x325/cccccc/827f82",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.",
+		buttonLabel: "Find Out More!",
+	},
+	{
+		title: "Card title",
+		imageUrl: "https://dummyimage.com/500x325/cccccc/827f82",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo magno sapiente, tempore debitis beatae culpa natus architecto.",
+		buttonLabel: "Find Out More!",
+	},
+];
+ReactDOM.render(<Card card={list} />, document.querySelector("#app"));*/
