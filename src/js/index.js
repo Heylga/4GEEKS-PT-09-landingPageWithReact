@@ -12,6 +12,7 @@ import Container from "./component/container.jsx";
 import Jumbotron from "../js/component/jumbotron.jsx";
 import Card from "../js/component/card.jsx";
 import Footer from "../js/component/footer.jsx";
+import ListCards from "../js/component/listCards.jsx";
 
 //render your react application
 ReactDOM.render(

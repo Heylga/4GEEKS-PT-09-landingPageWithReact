@@ -1,9 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
 
 import Jumbotron from "./jumbotron.jsx";
-import Card from "./card.jsx";
+import ListCards from "../component/listCards.jsx";
 
 const Container = () => {
 	return (
@@ -16,7 +14,7 @@ const Container = () => {
 				style={{
 					justifyContent: "space-between",
 				}}>
-				<Card /> <Card /> <Card /> <Card />
+				<ListCards />
 			</div>
 		</div>
 	);
