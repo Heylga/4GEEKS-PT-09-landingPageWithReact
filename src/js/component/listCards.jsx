@@ -43,7 +43,16 @@ const listCards = () => {
 			/>
 		);
 	});
-	return <div> {listOfCards} </div>;
+	return (
+		<div
+			className="d-flex gap-2"
+			style={{
+				justifyContent: "space-between",
+			}}>
+			{" "}
+			{listOfCards}{" "}
+		</div>
+	);
 };
 
 export default listCards;

@@ -6,14 +6,10 @@ import ListCards from "../component/listCards.jsx";
 const Container = () => {
 	return (
 		<div className="container col-8">
-			<div className="bg-light pb-5 px-4">
+			<div className="bg-light pb-5 px-4 rounded-bottom">
 				<Jumbotron />
 			</div>
-			<div
-				className="d-flex gap-1"
-				style={{
-					justifyContent: "space-between",
-				}}>
+			<div>
 				<ListCards />
 			</div>
 		</div>
